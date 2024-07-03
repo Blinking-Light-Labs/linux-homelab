@@ -1,0 +1,9 @@
+https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser        
+https://v.firebog.net/hosts/Easyprivacy.txt    
+https://v.firebog.net/hosts/Easylist.txt    
+https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt    
+https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt    
+https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt    
+https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt    
+https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt
+https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt
