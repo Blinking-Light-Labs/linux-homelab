@@ -45,3 +45,7 @@ case "$1" in
     exit 1
     ;;
 esac
+
+# Remove TMP directory
+rm -R $TMP
+
