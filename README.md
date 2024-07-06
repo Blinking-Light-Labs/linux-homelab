@@ -13,4 +13,6 @@
   - Installer script for [Pi-Hole](https://pi-hole.net/). Containts my AdLists and installs unbound by default.
 -  [Proxmox](./proxmox/)
    - small scripts I use in my proxmox lab. 
+- [SSL](./SSL/)
+  - Script to extract pfx certs with OpenSSL. 
 
