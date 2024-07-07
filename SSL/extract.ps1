@@ -7,8 +7,8 @@ Write-Output "Application: $appName"
 Write-Output "Date: $currentDate"
 
 # Define the paths for the input PFX file and the base output directory
-$pfxPath = "C:\path\"
-$outputDir = "C:\path\$appName"
+$pfxPath = ""
+$outputDir = "\$appName"
 
 # Ensure the output directory exists
 if (-Not (Test-Path -Path $outputDir)) {
@@ -22,16 +22,23 @@ $pfxPasswordPlainText = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runt
 # Define the filenames with the app name and date appended
 $crtFilename = "certificate_$($appName.Replace(' ', '_'))_$currentDate.crt"
 $keyFilename = "private_$($appName.Replace(' ', '_'))_$currentDate.key"
+$chainFilename = "chain_$($appName.Replace(' ', '_'))_$currentDate.pem"
 
 # Define the paths for the output CRT and KEY files
 $crtPath = "$outputDir\$crtFilename"
 $keyPath = "$outputDir\$keyFilename"
-
+$chainPath = "$outputDir\$chainFilename"
 
 # Export the private key
 openssl pkcs12 -in $pfxPath -nocerts -nodes -out $keyPath -password pass:$pfxPasswordPlainText
 
-# Export the certificate
-openssl pkcs12 -in $pfxPath -clcerts -nokeys -out $crtPath -password pass:$pfxPasswordPlainText
+# Export the certificate chain
+openssl pkcs12 -in $pfxPath -nokeys -out $chainPath -password pass:$pfxPasswordPlainText
 
-Write-Output "Conversion complete: $pfxPath to $crtPath and $keyPath in $outputDir"
+# Export the certificate (leaf certificate)
+openssl x509 -in $chainPath -out $crtPath
+
+# Clear the plain text password from memory
+[System.Runtime.InteropServices.Marshal]::ZeroFreeBSTR([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($pfxPassword))
+
+Write-Output "Conversion complete: $pfxPath to $crtPath, $keyPath, and $chainPath in $outputDir"
