@@ -10,7 +10,7 @@
 - [Linux Scripts](./scripts/)
   - Scripts made for use in Linud.
 
-## Team
+## Contributors
 
 | [![ColoredBytes](https://github.com/ColoredBytes.png?size=100)](https://github.com/ColoredBytes) |
 | ---------------------------------------------------------------------------------------- |
