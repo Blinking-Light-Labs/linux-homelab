@@ -8,7 +8,7 @@
 -  [Proxmox](./proxmox/)
    - Scripts made for use in Proxmox.
 - [Linux Scripts](./scripts/)
-  - Scripts made for use in Linud.
+  - Scripts made for use in Linux.
 
 ## Contributors
 
