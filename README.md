@@ -12,6 +12,6 @@
 
 ## Contributors
 
-| [![ColoredBytes](https://github.com/ColoredBytes.png?size=100)](https://github.com/ColoredBytes) |
-| ---------------------------------------------------------------------------------------- |
-| [ColoredBytes](https://github.com/ColoredBytes)                                               |
+| [![ColoredBytes](https://github.com/ColoredBytes.png?size=100)](https://github.com/ColoredBytes) | [![padthaitofuhot](https://github.com/padthaitofuhot.png?size=100)](https://github.com/padthaitofuhot)
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [ColoredBytes](https://github.com/ColoredBytes)                                               | [padthaitofuhot](https://github.com/padthaitofuhot)   
