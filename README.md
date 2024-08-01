@@ -12,6 +12,6 @@
 
 ## Contributors
 
-| [![JershOps](https://github.com/JershOps.png?size=100)](https://github.com/JershOps) 
+| [![ColoredBytes](https://github.com/ColoredBytes.png?size=100)](https://github.com/ColoredBytes) 
 | ---------------------------------------------------------------------------------------- 
-| [JershOps](https://github.com/JershOps)                                               
+| [ColoredBytes](https://github.com/ColoredBytes)                                               
