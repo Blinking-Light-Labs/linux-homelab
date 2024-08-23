@@ -47,6 +47,9 @@ rpm_install() {
       echo "Checksum verification failed. Aborting installation."
       exit 1
   fi
+  
+  # Reconfigure Morpheus
+  sudo morpheus-ctl reconfigure
 }
 
 deb_install() {
@@ -69,6 +72,8 @@ deb_install() {
       echo "Checksum verification failed. Aborting installation."
       exit 1
   fi
+  # Reconfigure Morpheus
+  sudo morpheus-ctl reconfigure
 }
 
 case "$1" in
