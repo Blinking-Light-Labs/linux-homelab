@@ -1,6 +1,6 @@
-# Linux Homelab
+<h1 align="center"> Linux Homelab </h1>
 
-# :link: Contents
+## :link: Contents
 
 
 - [Pi-Hole](./pi-hole/)
