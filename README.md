@@ -1,7 +1,8 @@
 <h1 align="center"> Linux Homelab </h1>
 
 <div align="center">
-## :link: Contents
+
+  ## :link: Contents
 
 
 | Section                     | Description                                                                                                        |
@@ -12,6 +13,7 @@
 
                                            
 </div>
+
 ## Contributors
 
 <a href="https://github.com/Blinking-Light-Labs/linux-homelab/graphs/contributors">
